@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.inventorystage2.FoodDetailActivity">
+
+    <TextView
+        android:id="@+id/txtFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="BUTTER"
+        android:textColor="@color/colorFoodName"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@id/txtFoodName"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/butter" />
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="PRICE:"
+        android:layout_below="@id/imgFood" />
+
+    <LinearLayout
+        android:id="@+id/llQuantity"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="QUANTITY"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="btnPlus_OnClick"
+            />
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="5 Stk"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="btnMinus_OnClick"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtSupplierName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="SUPPLIER NAME:"
+        android:layout_below="@id/llQuantity" />
+    <TextView
+        android:id="@+id/txtSupplierPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="SUPPLIER PHONE NUMBER:"
+        android:layout_below="@id/txtSupplierName" />
+
+    <Button
+        android:id="@+id/btnCallSupplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Supplier"
+        android:layout_below="@id/txtSupplierPhoneNumber"
+        android:onClick="btnCallSupplier_OnClick" />
+
+   <Button
+       android:id="@+id/btnDelete"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:text="Delete"
+       android:onClick="btnDelete_OnClick"
+       />
+
+
+
+</RelativeLayout>

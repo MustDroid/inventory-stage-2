@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">InventoryStage2</string>
+
+    <string name="action_insert_data">Insert Data</string>
+
+    <string name="action_delete_all_entries">Delete All</string>
+    <string name="action_save">Save</string>
+
+    <string name="action_cancel">Cancel</string>
+    <string name="error_saving_food">Error while saving new food!</string>
+    <string name="food_saved">Food has been saved successfully!</string>
+    <string name="label_name">NAME:</string>
+    <string name="label_quantity">QUANTITY:</string>
+    <string name="label_price">PRICE:</string>
+    <string name="label_picture">PICTURE:</string>
+    <string name="label_supplier_name">SUPPLIER NAME</string>
+    <string name="label_supplier_phone_number">SUPPLIER PHONE NUMBER</string>
+    <string name="food_edited">Food edited successfully!</string>
+    <string name="food_edit_failed">Failed to edit food!</string>
+    <string name="msg_empty_phone_number">Supplier Phone Number cannot be empty!</string>
+    <string name="msg_empty_supplier_name">Supplier Name cannot be empty!</string>
+    <string name="price_not_number">Price is not a number!</string>
+    <string name="msg_price_not_empty">Price cannot be empty!</string>
+    <string name="quantity_not_number">Quantity is not a number!</string>
+    <string name="msg_quantity_not_empty">Quantity cannot be empty!</string>
+    <string name="msg_food_not_empty">The food name cannot be empty!</string>
+</resources>

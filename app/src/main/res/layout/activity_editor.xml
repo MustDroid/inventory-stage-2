@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_name"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llQuantity"
+        android:layout_below="@id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_quantity"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_below="@id/llQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_price"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPicture"
+        android:layout_below="@id/llPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_picture"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/editPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llSupplierName"
+        android:layout_below="@id/llPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_supplier_name"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/editSupplierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtSupplierPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSupplierName"
+        android:text="@string/label_supplier_phone_number"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/editSupplierPhoneNumber"
+        android:layout_below="@id/txtSupplierPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        />
+
+
+</RelativeLayout>
